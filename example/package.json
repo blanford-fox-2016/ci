@@ -1,0 +1,32 @@
+{
+  "name": "mochacourse",
+  "version": "1.0.0",
+  "description": "Example code and repo for my Nettuts.com course: JS Unit Testing with Mocha, Chai, and Sinon ",
+  "main": "server.js",
+  "dependencies": {
+    "chai": "~1.9.1"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "mocha": "~1.18.2",
+    "mocha-junit-reporter": "^1.11.1",
+    "sinon": "^1.9.1"
+  },
+  "testling": {
+    "harness": "mocha-bdd",
+    "files": "test/*.js",
+    "browsers": [
+      "ie/7..latest",
+      "chrome/latest",
+      "firefox/latest",
+      "iphone/latest",
+      "ipad/latest",
+      "safari/latest"
+    ]
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha -R list -b"
+  },
+  "author": "Jason Rhodes",
+  "license": "ISC"
+}
